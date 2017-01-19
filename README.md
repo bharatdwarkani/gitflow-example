@@ -23,12 +23,12 @@ develop and master branch
  
 
 1.	 Checkout master branch.
-git checkout master
-git push -u origin master
+	git checkout master
+	git push -u origin master
 
 2.	Push new branch to remote repository
-git checkout develop
-git push origin develop
+	git checkout develop
+	git push origin develop
 
 
 feature branch
