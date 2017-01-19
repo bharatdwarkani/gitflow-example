@@ -51,29 +51,29 @@ git flow feature track feature1 instead of git flow feature start feature1 can b
 
 Once a feature is completed and codes are reviewed, developer can complete his work in a branch by issuing following command. On execution, codes will be merged to development automatically and feature branch will be deleted from remote.
 
-git flow finish feature1
+git flow finish feature1</br>
 
 If you need to delete a branch you can execute </br>
 git branch -d feature/feature1</br>
 
 **release branch**
 
-Start a release branch. 
+Start a release branch. </br>
 git checkout develop </br>
 git pull </br>
 git flow release start release1</br>
 
-Commit newly added or modified changes and push to remote 
+Commit newly added or modified changes and push to remote </br>
 git add . </br>
 git commit -am "Your message" </br>
 git flow publish release1 </br>
 git push</br>
 
-Merge changes to develop branch 
+Merge changes to develop branch </br>
 git checkout develop</br>
 git merge release/release1</br>
 
-After release merge changes of branch to master 
+After release merge changes of branch to master </br>
 git checkout release/release1 </br>
 git pull </br>
 git flow release finish release1 (or)</br>
@@ -82,16 +82,17 @@ git checkout master git push --all origin</br>
 
 **hotfix branch**
 
-Start a new hotfix branch and commit changes after modifications.
+Start a new hotfix branch and commit changes after modifications.</br>
 git checkout develop </br>
 git flow hotfix start hotfix1</br>
 git status </br>
 git add . </br>
 git commit -am "Your message"</br>
 
-Publish branch to remote git flow publish hotfix1
+Publish branch to remote </br>
+git flow publish hotfix1 
 
-Merge changes to remote 
+Merge changes to remote </br>
 git flow hotfix finish hotfix1 (or) </br>
 git flow hotfix finish -m "Your message" "hotfix1" </br>
 git status </br>
