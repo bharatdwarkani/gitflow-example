@@ -1,2 +1,2 @@
 # gitflow
-A repository for demonstrating Gitflow branching model 
+A repository for demonstrating Gitflow branching model  using Gitflow Extension
