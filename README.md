@@ -6,7 +6,8 @@ Below process is based on Gitflow model proposed by him http://nvie.com/posts/a-
 
 Installing a Gitflow Extension
 
-It is a set of extensions based on Vincent Driessen's branching model. Installation instructions can be found for different platforms here. However, we will provide a simplified step to get it up and running on windows. 
+Installation instructions can be found for different platforms here. However, we will provide a simplified step to get it up and running on windows. 
+
 1.	Download and install Git for Windows. By default, it would install in this directory “C:\Program Files\Git”.
 2.	Next you need to get these three files getopt.exe from  util-linux package , libintl3.dll, and libiconv2.dll from the dependencies packages (libintl and libiconv). We have gathered and uploaded all these files for ease of installation, so you could get those from here alternatively.
 3.	Once you get those three files copy and paste those files at a location where Git was installed (i.e.,) inside a bin folder at “C:\Program Files\Git\bin”
@@ -16,7 +17,7 @@ It is a set of extensions based on Vincent Driessen's branching model. Installat
 msysgit-install.cmd "C:\Program Files\Git"
 7.	Git flow will be installed and you could test it by typing Git flow help in command prompt. That’s it Git flow extension is installed & configured in your system ready for use.
  
-Commands related to different branches
+Commands related to different branches in a Gitflow model
  
 develop and master branch
  
@@ -33,31 +34,35 @@ git push origin develop
 feature branch
 
 1.	Clone a repository
+
 	git clone https://github.com/bharatdwarkani/gitflow-example 
 	cd gitflow-example
 	git checkout develop
 	git flow init
 
 2.	Start a feature branch, name of feature branch will be name of feature; here we are using it as feature1 for an example
-git flow feature start feature1
-After execution feature1 branch will be created, but it exists only in your system and will not be available in remote GitHub repository. Now a developer can continue his development, add files or modify codes. Once done with the feature he/she can commit those features in local system and later push on to remote. 
+
+	git flow feature start feature1
+ 
 
 3.	Once done. Status of changes can be checked and newly added or modified files.
+
 	git status
 	git add .
 	git commit -am "Your message"
 
 4.	Following command will publish feature on to remote repository.
-git flow publish feature1
-git push
+
+	git flow publish feature1
+	git push
 
     git flow feature track feature1 instead of git flow feature start feature1 can be used when a feature branch is checkout in different machines
 
 5.	Once a feature is completed and codes are reviewed, developer can complete his work in a branch by issuing following command. On execution, codes will be merged to development automatically and feature branch will be deleted from remote.
-git flow finish feature1
+	git flow finish feature1
 
 6.	If you need to delete a branch you can execute
-git branch -d feature/feature1
+	git branch -d feature/feature1
 
 release branch
 
