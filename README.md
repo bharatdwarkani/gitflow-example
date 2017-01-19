@@ -27,25 +27,25 @@ Push new branch to remote repository git checkout develop git push origin develo
 
 Clone a repository
 
-git clone https://github.com/bharatdwarkani/gitflow-example 
-cd gitflow-example 
-git checkout develop 
-git flow init
+git clone https://github.com/bharatdwarkani/gitflow-example </br>
+cd gitflow-example </br>
+git checkout develop </br>
+git flow init</br>
 
 Start a feature branch, name of feature branch will be name of feature; here we are using it as feature1 for an example
 
-git flow feature start feature1
+git flow feature start feature1</br>
 
 Once done. Status of changes can be checked and newly added or modified files.
 
-git status 
-git add .
-git commit -am "Your message"
+git status </br>
+git add .</br>
+git commit -am "Your message"</br>
 
 Following command will publish feature on to remote repository.
 
-git flow publish feature1 
-git push
+git flow publish feature1 </br>
+git push</br>
 
 git flow feature track feature1 instead of git flow feature start feature1 can be used when a feature branch is checkout in different machines
 
@@ -53,47 +53,47 @@ Once a feature is completed and codes are reviewed, developer can complete his w
 
 git flow finish feature1
 
-If you need to delete a branch you can execute 
-git branch -d feature/feature1
+If you need to delete a branch you can execute </br>
+git branch -d feature/feature1</br>
 
 **release branch**
 
 Start a release branch. 
-git checkout develop 
-git pull 
-git flow release start release1
+git checkout develop </br>
+git pull </br>
+git flow release start release1</br>
 
 Commit newly added or modified changes and push to remote 
-git add . 
-git commit -am "Your message" 
-git flow publish release1 
-git push
+git add . </br>
+git commit -am "Your message" </br>
+git flow publish release1 </br>
+git push</br>
 
 Merge changes to develop branch 
-git checkout develop
-git merge release/release1
+git checkout develop</br>
+git merge release/release1</br>
 
 After release merge changes of branch to master 
-git checkout release/release1 
-git pull 
-git flow release finish release1 (or)
-git flow release finish -m "Your message" "release1"
-git checkout master git push --all origin
+git checkout release/release1 </br>
+git pull </br>
+git flow release finish release1 (or)</br>
+git flow release finish -m "Your message" "release1"</br>
+git checkout master git push --all origin</br>
 
 **hotfix branch**
 
 Start a new hotfix branch and commit changes after modifications.
-git checkout develop 
-git flow hotfix start hotfix1
-git status 
-git add . 
-git commit -am "Your message"
+git checkout develop </br>
+git flow hotfix start hotfix1</br>
+git status </br>
+git add . </br>
+git commit -am "Your message"</br>
 
 Publish branch to remote git flow publish hotfix1
 
 Merge changes to remote 
-git flow hotfix finish hotfix1 (or)
-git flow hotfix finish -m "Your message" "hotfix1" 
-git status 
-git checkout master
-git push --all origin
+git flow hotfix finish hotfix1 (or) </br>
+git flow hotfix finish -m "Your message" "hotfix1" </br>
+git status </br>
+git checkout master </br>
+git push --all origin </br>
