@@ -8,14 +8,14 @@ Below process is based on Gitflow model proposed by him http://nvie.com/posts/a-
 
 Installation instructions can be found for different platforms here. However, we will provide a simplified step to get it up and running on windows.
 
-Download and install Git for Windows. By default, it would install in this directory “C:\Program Files\Git”.
-Next you need to get these three files getopt.exe from util-linux package , libintl3.dll, and libiconv2.dll from the dependencies packages (libintl and libiconv). We have gathered and uploaded all these files for ease of installation, so you could get those from here alternatively.
-Once you get those three files copy and paste those files at a location where Git was installed (i.e.,) inside a bin folder at “C:\Program Files\Git\bin”
-Next step is to clone or download this repository https://github.com/nvie/gitflow
-Once done there will be a folder named “contrib” navigate to that folder (gitflow-develop\contrib).
-Open command prompt in that directory in administration mode and type this command msysgit-install.cmd "C:\Program Files\Git"
-Git flow will be installed and you could test it by typing Git flow help in command prompt. That’s it Git flow extension is installed & configured in your system ready for use.
-Commands related to different branches in a Gitflow model
+1. Download and install Git for Windows. By default, it would install in this directory “C:\Program Files\Git”.
+2. Next you need to get these three files getopt.exe from util-linux package , libintl3.dll, and libiconv2.dll from the dependencies packages (libintl and libiconv). We have gathered and uploaded all these files for ease of installation, so you could get those from here alternatively.
+3. Once you get those three files copy and paste those files at a location where Git was installed (i.e.,) inside a bin folder at “C:\Program Files\Git\bin”
+4. Next step is to clone or download this repository https://github.com/nvie/gitflow
+5. Once done there will be a folder named “contrib” navigate to that folder (gitflow-develop\contrib).
+6. Open command prompt in that directory in administration mode and type this command msysgit-install.cmd "C:\Program Files\Git"
+7. Git flow will be installed and you could test it by typing Git flow help in command prompt. That’s it Git flow extension is installed & configured in your system ready for use.
+8. Commands related to different branches in a Gitflow model
 
 **develop and master branch**
 
