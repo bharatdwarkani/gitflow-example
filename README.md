@@ -4,7 +4,7 @@ Credits and thanks to Vincent Driessen for proposing a robust Gitflow model and 
 
 Below process is based on Gitflow model proposed by him http://nvie.com/posts/a-successful-git-branching-model/
 
-Installing a Gitflow Extension
+**Installing a Gitflow Extension**
 
 Installation instructions can be found for different platforms here. However, we will provide a simplified step to get it up and running on windows.
 
@@ -17,13 +17,13 @@ Open command prompt in that directory in administration mode and type this comma
 Git flow will be installed and you could test it by typing Git flow help in command prompt. That’s it Git flow extension is installed & configured in your system ready for use.
 Commands related to different branches in a Gitflow model
 
-develop and master branch
+**develop and master branch**
 
 Checkout master branch. git checkout master git push -u origin master
 
 Push new branch to remote repository git checkout develop git push origin develop
 
-feature branch
+**feature branch**
 
 Clone a repository
 
@@ -56,7 +56,7 @@ git flow finish feature1
 If you need to delete a branch you can execute 
 git branch -d feature/feature1
 
-release branch
+**release branch**
 
 Start a release branch. 
 git checkout develop 
@@ -80,7 +80,7 @@ git flow release finish release1 (or)
 git flow release finish -m "Your message" "release1"
 git checkout master git push --all origin
 
-hotfix branch
+**hotfix branch**
 
 Start a new hotfix branch and commit changes after modifications.
 git checkout develop 
